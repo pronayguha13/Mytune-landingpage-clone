@@ -42,38 +42,35 @@ h6 {
 }
 .main {
   display: grid;
-  grid-template-rows: repeat (3, minmax(100vh, auto));
+  grid-template-rows: repeat (5, minmax(100vh, auto));
 }
 
 .first {
   background: url(/assets/showcase.jpeg) no-repeat center/cover;
   position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .first h1 {
-  position: absolute;
-  top: 32%;
-  left: 42%;
   font-size: 4rem;
+  margin-top: 50%;
 }
 
 .first h2 {
-  position: absolute;
-  top: 46%;
-  left: 26%;
-  font-size: 30px;
+  font-size: 1.6rem;
   text-align: center;
 }
 
 .first h4 {
-  position: absolute;
-  top: 56%;
-  left: 10%;
-  padding-right: 12%;
+  display: none;
+  padding-right: 4%;
+  padding-left: 4%;
   text-align: center;
-  font-size: 20px;
-  line-height: 52px;
+  font-size: 18px;
+  line-height: 50px;
 }
 
 .second {
@@ -106,14 +103,171 @@ h6 {
 }
 
 .second h3 {
-  font-size: 25px;
-  font-weight: 500;
-  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 5%;
   text-align: center;
-  padding-left: 22%;
-  padding-right: 22%;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-bottom: 6%;
+}
+
+.second button {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding: 18px 18px;
+  background-color: #b90415;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.second button:hover {
+  background-color: #bd1323;
+}
+
+.second p {
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.7%;
+  font-weight: 100;
+}
+#mockup1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  user-select: none;
+  width: 100%;
+}
+
+.third {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.third h1,
+.third h4 {
+  color: #111;
+}
+
+.third h1 {
+  margin-bottom: 40px;
+}
+
+.third h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+.third button {
+  padding: 18px 20px;
+  margin-bottom: 25px;
+  background-color: #103063;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.third button:hover {
+  background-color: #143f85;
+}
+
+.third img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.fourth {
+  background: url(/assets/section-bg.jpeg) no-repeat center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.fourth h1 {
+  font-size: 1.8rem;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+.fourth h3 {
+  margin-top: 40px;
+  line-height: 30px;
+  font-weight: 100;
+  margin-bottom: 120px;
+}
+
+.fifth {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+#card-image {
+  width: 100%;
+}
+
+#info {
+  margin-top: 40px;
+}
+#info > * {
+  color: #111;
+}
+
+#info h4 {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
+
+#alreadyText {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+#expand {
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .footer {
   background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+  .first h1 {
+    margin-top: 25%;
+  }
+  .first h4 {
+    display: block;
+  }
+  .second h3 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+
+  .fourth {
+    height: 50vh;
+  }
+  .fourth h1 {
+    margin-top: 25%;
+  }
 }
