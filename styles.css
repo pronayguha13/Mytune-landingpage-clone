@@ -270,4 +270,24 @@ h6 {
   .fourth h1 {
     margin-top: 25%;
   }
+
+  .fifth {
+    flex-direction: row;
+    align-items: unset;
+  }
+  #card-image {
+    width: 50%;
+    margin-top: 40px;
+    padding-right: 30px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+  }
+
+  #info {
+    margin-top: 40px;
+    /* padding-right: 30px; */
+    font-size: 1.2rem;
+    /* margin-right: 20px; */
+    width: 46%;
+  }
 }
